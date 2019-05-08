@@ -1,0 +1,317 @@
+<html>
+	<head>
+		<!--网页标题-->
+		<title>想做一名地信出身的地理老师</title>
+
+		<!--防止中文乱码-->
+		<meta charset="UTF-8"/>
+		<!--网页关键字-->
+		<meta name="keywords" content="GIS, 地理科学， 地理老师， WebGIS, 地理信息科学"/>
+		<!--网页描述-->
+		<meta name="description" content="该网站创建开启时间：2019年5月4日10点23分，是由一名就读于河北师范大学地理信息科学专业大二学生吴希浙着手，用作分享学习经历哈哈哈哈哈"/>
+		<!--网站主页样式设置-->
+		<style type="text/css">
+
+			/*清除浏览器默认样式*/
+			*{
+				margin: 0;
+				padding: 0;
+				font-family: monospace;
+			}
+			a{
+				text-decoration: none;
+			}
+			/*预防盒子之间的垂直外边距重叠问题和高度塌陷问题*/
+			.clearfix:before, .clearfix:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			/*背景样式*/
+			#main_background{
+				width: 100%;
+				height: 100%;
+				background-color: #0072C6;
+				overflow: hidden;
+			}
+			/*内容区样式*/
+			#show{
+				width: 65%;
+				margin: 2% auto;
+			}
+			/*头部内容样式*/
+			#header{
+				/*background-color: gold;*/
+				width: 30%;
+				/*height: 5%;*/
+				font-weight: bold;
+				font-size: 150%;
+				color: white;
+				display: none;
+			}
+			#content{
+				height: 100%;
+				overflow: hidden;
+				display: none;
+			}
+			.bigbox{
+				display: block;
+				width: 95px;
+				/*height: 10px;*/
+				padding-top: 69px;
+				padding-bottom: 8px;
+				padding-left: 5px;
+				color: white;
+				font-size: 20px;
+			}
+			.smallbox{
+				display: block;
+				width: 48px;
+				/*height: 10px;*/
+				padding-top: 26px;
+				padding-bottom: 1px;
+				padding-left: 2px;
+				color: white;
+				font-size: 20px;
+				/*display: none;*/
+			}
+			#welcome{
+				background-color: #00BCF2;
+				margin-top: 3%;
+				padding-top: 1.5%;
+				padding-left: 2%;
+				padding-bottom: 4%;
+				width: 600px;
+				font-size: 250%;
+				color: white;
+			}
+			#blogCatalog{
+				background-color: #00475B;
+			}
+			#bookmarks{
+				background-color: #01ADDD;
+				position: relative;
+				left: 200px;
+				bottom: 100px;
+			}
+			#webgis1{
+				background-color: #00475B;
+				position: relative;
+				left: 300px;
+				bottom: 200px;
+			}
+			#webgis2{
+				background-color: #00BCF2;
+				position: relative;
+				left: 100px;
+				bottom: 250px;
+			}
+			#email{
+				background-color: #01ADDD;
+				position: relative;
+				left: 50px;
+				bottom: 300px;
+			}
+			#say{
+				background-color: #00475B;
+				position: relative;
+				left: 200px;
+				bottom: 350px;
+			}
+			#doing01{
+				background-color: #00BCF2;
+				position: relative;
+				left: 250px;
+				bottom: 400px;
+			}
+			#doing02{
+				background-color: #01ADDD;
+				position: relative;
+				left: 350px;
+				bottom: 500px;
+			}
+			#doing03{
+				background-color: #00475B;
+				position: relative;
+				left: 450px;
+				bottom: 600px;
+			}
+			#doing04{
+				background-color: #00475B;
+				position: relative;
+				left: 50px;
+				bottom: 650px;
+			}
+			#img01{
+				position: relative;
+				left: 150px;
+				bottom: 750px;
+				padding: 0;
+				overflow: hidden;
+				width: 100px;
+			}
+			#img01 img{
+				position: relative;
+				right: 25px;
+			}
+			#doing05{
+				background-color: #00BCF2;
+				position: relative;
+				left: 200px;
+				bottom: 750px;
+			}
+			#doing06{
+				background-color: #01ADDD;
+				position: relative;
+				left: 250px;
+				bottom: 850px;
+			}
+			#doing07{
+				background-color: #00475B;
+				position: relative;
+				left: 350px;
+				bottom: 950px;
+			}
+			#doing08{
+				background-color: #00BCF2;
+				position: relative;
+				left: 450px;
+				bottom: 1050px;
+			}
+			#doing09{
+				background-color: #00475B;
+				position: relative;
+				left: 550px;
+				bottom: 1150px;
+			}
+			#doing10{
+				background-color: #01ADDD;
+				position: relative;
+				left: 650px;
+				bottom: 1250px;
+			}
+			#doing11{
+				background-color: #00BCF2;
+				position: relative;
+				left: 750px;
+				bottom: 1400px;
+			}
+			#doing12{
+				background-color: #00BCF2;
+				position: relative;
+				left: 350px;
+				bottom: 1300px;
+			}
+			#doing13{
+				background-color: #00475B;
+				position: relative;
+				left: 250px;
+				bottom: 1400px;
+			}
+			#img02{
+				position: relative;
+				left: 450px;
+				bottom: 1500px;
+				padding: 0;
+				overflow: hidden;
+				width: 100px;
+			}
+			#img02 img{
+				position: relative;
+				right: 25px;
+			}
+			#doing14{
+				background-color: #00BCF2;
+				position: relative;
+				left: 550px;
+				bottom: 1600px;
+			}
+			#doing15{
+				background-color: #01ADDD;
+				position: relative;
+				left: 600px;
+				bottom: 1650px;
+			}
+			#doing16{
+				background-color: #00475B;
+				position: relative;
+				left: 550px;
+				bottom: 1650px;
+			}
+			a{
+				transition: opacity 0.5s, transform 0.5s;
+			}
+			a:hover{
+				opacity: 0.1;
+				transform:rotate(180deg);
+			}
+			#footer{
+				position: absolute;
+				top: 85%;
+				left: 18%;
+				font-weight: bold;
+				color: white;
+				font-size: 20px;
+				display: none;
+			}
+		</style>
+		
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#header").fadeIn(2000);
+				$("#content").fadeIn(3000);
+				$("#footer").fadeIn(4000);
+			});
+		</script>
+		
+	</head>
+	<body>
+		<!--背景-->
+		<div id="main_background" class="clearfix">
+			<!--内容区-->
+			<div id="show">
+				<!--头部内容-->
+				<div id="header">
+					🐱‍👓Ngheizit
+				</div>
+				<!--主体内容-->
+				<div id="content">
+					<div id="welcome">
+						Welcome to my GISer's world!
+					</div>
+					<a href="#" id="blogCatalog" class="bigbox">Blogs</a>
+					<a href="bookmarks/index.html" id="bookmarks" class="bigbox">Bookmarks</a>
+					<a href="#" id="webgis1" class="bigbox">WebGIS</a>
+					<a href="#" id="webgis2" class="bigbox">WebGIS</a>
+					<a href="mailto:ngheizitgis@outlook.com" id="email" class="smallbox">email</a>
+					<a href="#" id="say" class="smallbox">留言</a>
+					<a href="#" id="doing01" class="bigbox">未开发</a>
+					<a href="#" id="doing02" class="bigbox">未开发</a>
+					<a href="#" id="doing03" class="bigbox">未开发</a>
+					<a href="#" id="doing04" class="bigbox">未开发</a>
+					<a href="#" id="img01" class="bigbox"><img src="img/snoopy_12.jpg" height="100px"/></a>
+					<a href="#" id="doing05" class="smallbox">待</a>
+					<a href="#" id="doing06" class="bigbox">未开发</a>
+					<a href="#" id="doing07" class="bigbox">未开发</a>
+					<a href="#" id="doing08" class="bigbox">未开发</a>
+					<a href="#" id="doing09" class="bigbox">未开发</a>
+					<a href="#" id="doing10" class="bigbox">未开发</a>
+					<a href="#" id="doing11" class="smallbox">待</a>
+					<a href="#" id="doing12" class="bigbox">未开发</a>
+					<a href="#" id="doing13" class="bigbox">未开发</a>
+					<a href="#" id="img02" class="bigbox"><img src="img/snoopy_18.jpg" height="100px"/></a>
+					<a href="#" id="doing14" class="smallbox">待</a>
+					<a href="#" id="doing15" class="smallbox">待</a>
+					<a href="#" id="doing16" class="smallbox">待</a>
+				</div>
+				<!--脚步内容-->
+				<div id="footer">
+					GISer Fighting!
+				</div>
+			
+			</div>
+		</div>
+		
+	</body>
+</html>
