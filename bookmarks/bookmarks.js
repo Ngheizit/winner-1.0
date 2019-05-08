@@ -300,7 +300,8 @@ var bookmarks = {
 		createURL("https://earthobservatory.nasa.gov/", "NASA Earth Observatory - Home", "神奇的东东"),
 		createURL("https://developers.arcgis.com/javascript/", "ArcGIS API for JavaScript", "WebGIS强大的API"),
 		createURL("https://gis.3nice.cc/cn/index.html", "GIS.3nice.cc", "地理信息网站导航"),
-		createURL("https://openlayers.org/", "OpenLayers - Welcome", "WebGIS强大的API")
+		createURL("https://openlayers.org/", "OpenLayers - Welcome", "WebGIS强大的API"),
+                createURL("https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/smart-choices-for-basemaps-and-color-ramps-when-mapping-demographic-data/","地图的底图和颜色渐变选择","一片很有趣的GIS地图制图技巧文章")
 	],
 	elses: [
 		createURL("http://gaohr.win/", "GaoHR | Homepage", "一位GIS领域的人物的个人网站"),
