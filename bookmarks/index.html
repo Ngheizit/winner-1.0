@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ngheizit分享网站链接噢</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="bookmarks.css">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+</head>
+<body>
+	
+	<div id="header">
+		<span id="main"><a href="../index.html">Ngheizit's Bookmarks</a></span>
+		<span id="sub">It may be useful for you. And nothing is impossible</span>
+	</div>
+	<div id="fgx" class="clearfix">
+		🙇‍♀️👇👇🙇‍♂️
+		<div id="dir" style="display: none;border-top: 8px solid #00475B;">
+			<div id="bm_user">~常用滴~</div>
+			<div id="bm_coding">~编程教程~</div>
+			<div id="bm_crimeMapping">~犯罪地理~</div>
+			<div id="bm_mapData" >~地理数据~</div>
+			<div id="bm_gisShare">~GIS技术~</div>
+			<div id="bm_elses">~其他~</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+		  	$("#fgx").mousemove(function(){
+		    	$("#dir").slideDown(300);
+		  	});
+		  	$("#fgx").mouseleave(function(){
+		    	$("#dir").slideUp(200);
+		  	});
+		  	$("#bm_coding").click(function(){
+		  		$("#bookmarks_user").slideUp(500);
+		  		$("#bookmarks_crimeMapping").slideUp(500);
+		  		$("#bookmarks_mapData").slideUp(500);
+		  		$("#bookmarks_gisShare").slideUp(500);
+		  		$("#bookmarks_elses").slideUp(500);
+		  		$("#bookmarks_coding").slideDown(500);
+		  	});
+		  	$("#bm_user").click(function(){
+		  		$("#bookmarks_coding").slideUp(500);
+		  		$("#bookmarks_crimeMapping").slideUp(500);
+		  		$("#bookmarks_mapData").slideUp(500);
+		  		$("#bookmarks_gisShare").slideUp(500);
+		  		$("#bookmarks_elses").slideUp(500);
+		  		$("#bookmarks_user").slideDown(500);
+		  	});
+		  	$("#bm_crimeMapping").click(function(){
+		  		$("#bookmarks_coding").slideUp(500);
+		  		$("#bookmarks_user").slideUp(500);
+		  		$("#bookmarks_mapData").slideUp(500);
+		  		$("#bookmarks_gisShare").slideUp(500);
+		  		$("#bookmarks_elses").slideUp(500);
+		  		$("#bookmarks_crimeMapping").slideDown(500);
+		  	});
+		  	$("#bm_mapData").click(function(){
+		  		$("#bookmarks_coding").slideUp(500);
+		  		$("#bookmarks_user").slideUp(500);
+		  		$("#bookmarks_crimeMapping").slideUp(500);
+		  		$("#bookmarks_gisShare").slideUp(500);
+		  		$("#bookmarks_elses").slideUp(500);
+		  		$("#bookmarks_mapData").slideDown(500);
+		  	});
+		  	$("#bm_gisShare").click(function(){
+		  		$("#bookmarks_coding").slideUp(500);
+		  		$("#bookmarks_user").slideUp(500);
+		  		$("#bookmarks_crimeMapping").slideUp(500);
+		  		$("#bookmarks_mapData").slideUp(500);
+		  		$("#bookmarks_elses").slideUp(500);
+		  		$("#bookmarks_gisShare").slideDown(500);
+		  	});
+		  	$("#bm_elses").click(function(){
+		  		$("#bookmarks_coding").slideUp(500);
+		  		$("#bookmarks_user").slideUp(500);
+		  		$("#bookmarks_crimeMapping").slideUp(500);
+		  		$("#bookmarks_mapData").slideUp(500);
+		  		$("#bookmarks_gisShare").slideUp(500);
+		  		$("#bookmarks_elses").slideDown(500);
+		  	});
+		  	
+		});
+	</script>
+	<div id="content" class="clearfix">
+		
+		<div id="bookmarks_user" style="display: block;">
+			
+		</div>
+		<div id="bookmarks_coding">
+			
+		</div>
+		<div id="bookmarks_crimeMapping">
+			
+		</div>
+		<div id="bookmarks_mapData">
+			
+		</div>
+		<div id="bookmarks_gisShare">
+			
+		</div>
+		<div id="bookmarks_elses">
+			
+		</div>
+		
+	<script type="text/javascript" src="bookmarks.js" charset="utf-8"></script>
+	<script>
+		
+	</script>
+	</div>
+	<div id="footer">
+		
+	</div>
+	
+</body>
+</html>
