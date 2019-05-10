@@ -243,6 +243,7 @@ var bookmarks = {
 		createURL("https://www.12306.cn/index/", "12306中铁", "来一场说走就走的旅游吗，一起还收藏火车票呀！"),
 		createURL("https://outlook.live.com/mail/inbox", "Outlook邮箱", "微软旗下的邮箱，大陆唯一能顺畅使用的国际邮箱啊，珍惜珍惜！"),
 		createURL("http://mail.163.com", "163邮箱", "emmmmm,这邮箱在大陆生存得还行吧"),
+                createURL("http://www.hebtu.edu.cn","河北师大官网","建站创始人的本科就读院校～")
 	],
 	coding: [
 		createURL("https://unbug.github.io/codelf/", "标识符命名", "代码变量名卡壳解决网站"),
