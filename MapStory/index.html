@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ngheizit的地图故事</title>
+		
+		<!-- OpenLayers提供的样式文件及脚本文件 -->
+		<link rel="stylesheet" type="text/css" href="node_modules/ol/ol.css"/>
+		<script src="node_modules/ol/ol.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!-- 自定义样式文件及脚本文件 -->
+		<link rel="stylesheet" type="text/css" href="MapStory.css"/>
+	</head>
+	<body>
+		
+		<div id="header">
+			<!--<img width="100%" src="img/main.jpg"/>-->
+			<div id="title">
+				Ngheizit
+			</div>
+			<div id="smalltitle">
+				His Map Stroy
+			</div>
+		</div>
+		
+		<div id="content">
+			<!-- 地图容器 -->
+			<div id="map" class="map">			
+				<div id="screen_left"></div>
+				<div id="screen_right"></div>
+				<div id="btn_begin">BEGIN</div>
+			</div>
+			<!--弹出框容器-->
+	    	<div id="popup" class="ol-popup">
+	      		<a href="#" id="popup-closer" class="ol-popup-closer"></a>
+	      		<div id="popup-content"></div>
+	    	</div>
+			<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+			<script src="MapStory.js" type="text/javascript" charset="utf-8"></script>
+			
+
+			
+		</div>
+		
+		<div id="footer">
+			
+		</div>
+
+		
+	</body>
+</html>

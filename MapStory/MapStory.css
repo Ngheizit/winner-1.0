@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #000000;
+}
+
+/* 头部区样式 */
+#header{
+	background-image: url(img/main.jpg);
+	background-position: right; 
+	height: 400px;
+	overflow: hidden;
+}
+#header #title{
+	margin-top: 7%;
+	text-align: center;
+	font-size: 72px;
+	color: white;
+	text-shadow: 0 0 6px black;
+}
+#header #smalltitle{
+	text-align: center;
+	font-size: 32px;
+	color: white;
+	text-shadow: 0 0 6px black;
+}
+
+#content{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#content #screen_left{
+	position: absolute;
+	top: 0;
+	left: 2.55%;
+	z-index: 10;
+	height: 100%;
+	width: 47.5%;
+	background-color: whitesmoke;
+	opacity: 0.9;
+}
+#content #screen_right{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	float: right;
+	z-index: 10;
+	height: 100%;
+	width: 47.5%;
+	background-color: whitesmoke;
+	opacity: 0.9;
+}
+#content #btn_begin{
+	position: absolute;
+	top: 40%;
+	left: 43%;
+	z-index: 11;
+	width: 200px;
+	height: 110px;
+	background-color: #00475B;
+	border-radius: calc(22px);
+	text-align: center;
+	font-size: 48px;
+	line-height: 225%;
+	color: white;
+	text-shadow: 0 0 6px black;
+}
+#content #btn_begin:hover{
+	background-color: whitesmoke;
+	color: black;
+}
+ 
+ 
+ /*地图容器样式*/ 
+ #map{
+ 	width: 95%;
+ 	margin: 20px auto;
+ 	height: 650px;
+ }
+
+
+
+		      .ol-popup {
+		        position: absolute;
+		        background-color: white;
+		        -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+		        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+		        padding: 15px;
+		        border-radius: 10px;
+		        border: 1px solid #cccccc;
+		        bottom: 12px;
+		        left: -50px;
+		        min-width: 280px;
+		      }
+		      .ol-popup:after, .ol-popup:before {
+		        top: 100%;
+		        border: solid transparent;
+		        content: " ";
+		        height: 0;
+		        width: 0;
+		        position: absolute;
+		        pointer-events: none;
+		      }
+		      .ol-popup:after {
+		        border-top-color: white;
+		        border-width: 10px;
+		        left: 48px;
+		        margin-left: -10px;
+		      }
+		      .ol-popup:before {
+		        border-top-color: #cccccc;
+		        border-width: 11px;
+		        left: 48px;
+		        margin-left: -11px;
+		      }
+		      .ol-popup-closer {
+		        text-decoration: none;
+		        position: absolute;
+		        top: 2px;
+		        right: 8px;
+		      }
+		      .ol-popup-closer:after {
+		        content: "✖";
+		      }
